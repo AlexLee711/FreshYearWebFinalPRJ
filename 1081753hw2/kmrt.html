@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>高雄市捷運票價查詢系統 </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<style>
+	body{background-color:#F0F8FF;}
+	</style>
+  </head>
+  <body>
+	<form>
+		<!-- 輪播 -->
+		<div id="myCarousel" class="carousel slide">
+			<!-- 輪播指示 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			
+		<!-- 輪播內容 -->	
+		<div class="carousel-inner">
+			<!-- 第一個輪播項目 (包含圖片、標題與介紹) -->
+			<div class="item active">
+				<img src="img\formosa.jpg" width="100%">
+				<div class="carousel-caption">
+					<h1>世界8大最美地鐵車站第二名-美麗島站</h1>
+					<p class="lead">周邊六合夜市，帶你體驗高雄夜市風情!</p>
+				</div>
+			</div>
+			
+			<!-- 第二個輪播項目 (包含圖片、標題與介紹) -->
+			<div class="item">
+				<img src="img\centralpark.jpg" width="100%">
+				<div class="carousel-caption">
+					<h1>世界8大最美地鐵車站第五名-中央公園站</h1>
+					<p class="lead">周邊新崛江商圈，高雄年輕人最愛聚散地，距離鄰近百貨公司皆1公里內</p>
+				</div>
+			</div>
+			
+			<!-- 第三個輪播項目 (包含圖片、標題與介紹) -->
+			<div class="item">
+				<img src="img\dadong.jpg" width="100%"> 
+				<div class="carousel-caption">
+					<h1>台灣首座藝術圖書館位於-大東站</h1>
+					<p class="lead">高雄最佳藝文中心，大東藝術中心正在大東站，鄰近三級古蹟鳳儀書院</p>
+				</div>
+			</div>
+		</div>
+			
+			<!-- 輪播控制 -->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		<div class="container">
+			<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="#tab1" data-toggle="tab">高雄捷運路線圖</a></li>
+			<li><a href="#tab2" data-toggle="tab">高雄輕軌路線圖(僅顯示目前行駛站體)</a></li>
+			<li><a href="#tab3" data-toggle="tab">高雄完整大眾運輸系統路網(含輕軌與黃線之規畫路段)</a></li>
+			</ul>
+			
+			<!--標籤頁外掛-->
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="tab1">
+					<img class="center-block" src="img\kmrt.jpeg" width="50%">
+				</div>
+				<div class="tab-pane fade" id="tab2">
+			<img class="center-block" src="img\KRTC_Circular_line.png" width="100%">
+				</div>
+				<div class="tab-pane fade" id="tab3">
+			<img class="center-block" src="img\fullmrt.jpg" width="75%">
+				</div>
+		</div>
+		</div>
+		<div class="container">
+			<h1 class="text-left">捷運票價查詢</h1>
+		</div>
+		<div class="form-group">
+			<label for="card">票證公司</label>
+			<select class="form-control" id="card">
+			<option value="title">請選擇票證種類:
+			<option value="ipass">一卡通
+			<option value="easycard">悠遊卡
+			<option value="icash">愛金卡
+			<option value="happycash">有錢卡
+			</select>
+		</div>
+	</form>
+	<form>
+		<div class="form-group">
+			<label for="station">起站</label>
+			<select class="form-control" id="card">
+			<option value="title">請選擇捷運站點:
+			<option value="R3" style="background-color:#fe94ab">小港
+			<option value="R4" style="background-color:#fe94ab">高雄國際機場
+			<option value="R4A" style="background-color:#fe94ab">草衙
+			<option value="R5" style="background-color:#fe94ab">前鎮高中(五甲)
+			<option value="R6" style="background-color:#fe94ab">凱旋
+			<option value="R7" style="background-color:#fe94ab">獅甲
+			<option value="R8" style="background-color:#fe94ab">三多商圈
+			<option value="R9" style="background-color:#fe94ab">中央公園
+			<option value="R10" style="background-color:#fe94ab">美麗島
+			<option value="R11" style="background-color:#fe94ab">高雄車站
+			<option value="R12" style="background-color:#fe94ab">後驛(高醫大)
+			<option value="R13" style="background-color:#fe94ab">凹子底
+			<option value="R14" style="background-color:#fe94ab">巨蛋(三民家商)
+			<option value="R15" style="background-color:#fe94ab">生態園區
+			<option value="R16" style="background-color:#fe94ab">左營(高鐵)
+			<option value="R17" style="background-color:#fe94ab">世運(國家體育園區)
+			<option value="R18" style="background-color:#fe94ab">油廠國小(中山大學附中)
+			<option value="R19" style="background-color:#fe94ab">楠梓加工區
+			<option value="R20" style="background-color:#fe94ab">後勁
+			<option value="R21" style="background-color:#fe94ab">都會公園
+			<option value="R22" style="background-color:#fe94ab">青埔
+			<option value="R22A" style="background-color:#fe94ab">橋頭糖廠
+			<option value="R23" style="background-color:#fe94ab">橋頭火車站
+			<option value="R24" style="background-color:#fe94ab">南岡山
+			<option value="O1" style="background-color:#ffc550">西子灣(中山大學)
+			<option value="O2" style="background-color:#ffc550">鹽埕埔
+			<option value="O4" style="background-color:#ffc550">市議會(舊址)
+			<option value="O5" style="background-color:#ffc550">美麗島
+			<option value="O6" style="background-color:#ffc550">信義國小
+			<option value="O7" style="background-color:#ffc550">文化中心
+			<option value="O8" style="background-color:#ffc550">五塊厝
+			<option value="O9" style="background-color:#ffc550">技擊館
+			<option value="O10" style="background-color:#ffc550">衛武營
+			<option value="O11" style="background-color:#ffc550">鳳山西站(高雄市議會)
+			<option value="O12" style="background-color:#ffc550">鳳山
+			<option value="O13" style="background-color:#ffc550">大東
+			<option value="O14" style="background-color:#ffc550">鳳山國中
+			<option value="OT1" style="background-color:#ffc550">大寮(前庄)
+			</select>
+		</div>
+	</form>
+	<form>
+		<div class="form-group">
+			<label for="station">訖站</label>
+			<select class="form-control" id="card">
+			<option value="title">請選擇捷運站點:
+			<option value="R3" style="background-color:#fe94ab">小港
+			<option value="R4" style="background-color:#fe94ab">高雄國際機場
+			<option value="R4A" style="background-color:#fe94ab">草衙
+			<option value="R5" style="background-color:#fe94ab">前鎮高中(五甲)
+			<option value="R6" style="background-color:#fe94ab">凱旋
+			<option value="R7" style="background-color:#fe94ab">獅甲
+			<option value="R8" style="background-color:#fe94ab">三多商圈
+			<option value="R9" style="background-color:#fe94ab">中央公園
+			<option value="R10" style="background-color:#fe94ab">美麗島
+			<option value="R11" style="background-color:#fe94ab">高雄車站
+			<option value="R12" style="background-color:#fe94ab">後驛(高醫大)
+			<option value="R13" style="background-color:#fe94ab">凹子底
+			<option value="R14" style="background-color:#fe94ab">巨蛋(三民家商)
+			<option value="R15" style="background-color:#fe94ab">生態園區
+			<option value="R16" style="background-color:#fe94ab">左營(高鐵)
+			<option value="R17" style="background-color:#fe94ab">世運(國家體育園區)
+			<option value="R18" style="background-color:#fe94ab">油廠國小(中山大學附中)
+			<option value="R19" style="background-color:#fe94ab">楠梓加工區
+			<option value="R20" style="background-color:#fe94ab">後勁
+			<option value="R21" style="background-color:#fe94ab">都會公園
+			<option value="R22" style="background-color:#fe94ab">青埔
+			<option value="R22A" style="background-color:#fe94ab">橋頭糖廠
+			<option value="R23" style="background-color:#fe94ab">橋頭火車站
+			<option value="R24" style="background-color:#fe94ab">南岡山
+			<option value="O1" style="background-color:#ffc550">西子灣(中山大學)
+			<option value="O2" style="background-color:#ffc550">鹽埕埔
+			<option value="O4" style="background-color:#ffc550">市議會(舊址)
+			<option value="O5" style="background-color:#ffc550">美麗島
+			<option value="O6" style="background-color:#ffc550">信義國小
+			<option value="O7" style="background-color:#ffc550">文化中心
+			<option value="O8" style="background-color:#ffc550">五塊厝
+			<option value="O9" style="background-color:#ffc550">技擊館
+			<option value="O10" style="background-color:#ffc550">衛武營
+			<option value="O11" style="background-color:#ffc550">鳳山西站(高雄市議會)
+			<option value="O12" style="background-color:#ffc550">鳳山
+			<option value="O13" style="background-color:#ffc550">大東
+			<option value="O14" style="background-color:#ffc550">鳳山國中
+			<option value="OT1" style="background-color:#ffc550">大寮(前庄)
+			</select>
+		</div>
+	</form>
+		<button type="button" onclick="javascript:alert('全票: 元 學生票: 元 敬老票: 元 行經站數: 站 行駛時間: 分');" class="btn btn-default">查詢</button>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三稜鏡大學網|Premium會員申請頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<style>
+	.text8{color:white}
+	</style>
+  </head>
+  <body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid" style="background:#3498DB">
+		<div class="navbar-header">
+				<a class="navbar-brand" style="color:white">Prismatic Premium會員申請註冊</a>
+		</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="panel panel-default">
+		<div class="panel-body">
+		<h2><center>Premium會員註冊</center></h2>
+			<hr>
+	<form class="form">
+			<div class="form-group">
+				<label for="UserName">輸入姓名</label>
+				<input type="name" class="form-control" id="UserName">
+			</div>
+			<div class="form-group">
+				<label for="sexuality">請選擇性別:</label>
+			</div>
+			<div class="radio">	
+				<label><input type="radio" name="sex" value="male">男</label>
+				<label><input type="radio" name="sex" value="female">女</label>
+				<label><input type="radio" name="sex" value="other">其他</label>
+			</div>
+			<div class="form-group">
+				<label for="UserEmail">輸入電子郵件</label>
+				<input type="email" class="form-control" id="UserEmail">
+			</div>
+			<div class="form-group">
+				<label for="UserPWD">輸入密碼<small>(密碼請包涵英文數字及特殊字元)</small></label>
+				<input type="password" class="form-control" id="UserPWD">
+			</div>
+			<div class="form-group">
+				<label for="userBirthday">出生年/月/日</label>
+				<input type="date" class="form-control" id="userBirthday">
+			</div>
+			<div class="form-group">
+				<label for="UserPhone">電話號碼</label>
+				<input type="text" class="form-control" id="UserPhone">
+			</div>
+			<div class="form-group">
+				<label for="nationality">請選擇國籍/地區:</label>
+				<select class="form-control" id="nationality">
+					<option value="taiwan">中華民國(台灣)籍
+					<option value="china">中華人民共和國(大陸)籍
+					<option value="hkmc">港澳地區
+					<option value="spms">星馬地區
+					<option value="others">其他
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="UserHome">戶籍地址</label>
+				<input type="text" class="form-control" id="UserHome">
+			</div>
+			<div class="form-group">
+				<label for="ways">請選擇付費方案:</label>
+				<select class="form-control" id="ways">
+					<option value="month">月訂 $NT.160
+					<option value="season">季訂(三個月) $NT.450
+					<option value="year">年訂 $NT.1790
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="payment">請選擇付款方式:</label>
+				<select class="form-control" id="payment">
+					<option value="creditcard">信用卡(線上刷卡)
+					<option value="linepay">Line Pay
+					<option value="samsaung">Samsaung Pay
+					<option value="google">Google Pay
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="UserCard">使用者輸入卡號或行動支付之號碼</label>
+				<input type="text" class="form-control" id="UserCard">
+			</div>
+			<button onclick="javascript:alert('付款成功');" type="submit" class="btn btn-default">立即付款註冊</button>
+			</div>
+			</div>
+			</div>
+		</form>
+		<footer>
+	<center><button type="button" class="btn btn-primary btn-xs"><a href="universityweb.html"><span class="text8">返回首頁</span></a></button></center>
+	</footer>
+  </body>
+</html>
